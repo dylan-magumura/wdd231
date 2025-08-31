@@ -1,0 +1,85 @@
+/* Layout basics */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 1rem;
+  }
+  
+  header img {
+    width: 40px;
+    margin-right: 1rem;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    gap: 1rem;
+  }
+  
+  header nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  .about-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+  
+  .about, .student-photo {
+    border: 2px solid #333;
+    padding: 1rem;
+  }
+  
+  .student-photo img {
+    max-width: 100%;
+  }
+  
+  .courses {
+    margin-top: 2rem;
+    border: 2px solid #333;
+    padding: 1rem;
+  }
+  
+  .course-filters {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+  }
+  
+  .course-list {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .course {
+    border: 1px solid #333;
+    padding: 0.5rem 1rem;
+  }
+  
+  footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  footer .social img {
+    width: 24px;
+    margin: 0 0.5rem;
+  }
+  
