@@ -1,4 +1,4 @@
-// The provided array of courses
+// The array of courses
 const courses = [
     {
         subject: 'CSE',
@@ -138,3 +138,4 @@ wddBtn.addEventListener('click', () => {
 
 // Initial render of all courses when the page loads
 renderCourses(courses);
+
