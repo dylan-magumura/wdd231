@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Harare Chamber of Commerce</title>
+    <meta name="description" content="Welcome to the official Harare Chamber of Commerce. We support local businesses and community growth.">
+    <meta name="author" content="Dylan Magumura">
+
+    <meta property="og:title" content="Harare Chamber of Commerce">
+    <meta property="og:description" content="Supporting business and community growth in Harare.">
+    <meta property="og:image" content="https://dylan-magumura.github.io/wdd231/chamber/images/social_preview.jpg">
+    <meta property="og:url" content="https://dylan-magumura.github.io/wdd231/chamber/">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/directory.js"></script>
+    <script defer src="scripts/weather.js"></script>
+    <script defer src="scripts/dates.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-name">
+                <img src="images/logo.png" alt="Harare Chamber of Commerce Logo" class="chamber-logo">
+                <h1>Harare Chamber of Commerce</h1>
+            </div>
+            <button id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false"
+                aria-controls="primary-navigation">
+                ☰
+            </button>
+            <nav>
+                <ul class="nav-links" id="primary-navigation">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="home-grid">
+        <section class="hero-section">
+            <picture>
+                <source media="(min-width: 600px)" srcset="images/hero-large.webp">
+                <img src="images/hero-small.jpg" alt="City skyline at sunset" loading="lazy">
+            </picture>
+            <div class="hero-overlay-content">
+                <p class="hero-tagline">The Home of Business</p>
+                <a href="join.html" class="cta-button">Join us Today</a>
+            </div>
+        </section>
+
+        <section class="events-section">
+            <h2>Events</h2>
+            <div class="event-card">
+                <h3>Monthly Business Mixer</h3>
+                <p>Join us for our monthly networking event to connect with fellow business leaders. Great food, great
+                    company!</p>
+                <p class="event-date">October 26, 2025</p>
+            </div>
+            <div class="event-card">
+                <h3>Annual Tech Summit</h3>
+                <p>Explore the latest in technology and innovation. Featuring industry leaders and groundbreaking
+                    presentations.</p>
+                <p class="event-date">November 15, 2025</p>
+            </div>
+        </section>
+
+        <section class="current-weather-section">
+            <h2>Current Weather</h2>
+            <div id="weather-display">
+                <img id="weather-icon" src="images/meteorology.png" alt="Weather icon">
+                <p><strong><span id="current-temp">--</span> °C</strong></p>
+                <p id="weather-desc">Loading...</p>
+                <p>High: <strong><span id="temp-high">--</span>°C</strong></p>
+                <p>Low: <strong><span id="temp-low">--</span>°C</strong></p>
+                <p>Humidity: <span id="humidity">--</span>%</p>
+                <p>Sunrise: <span id="sunrise">--</span></p>
+                <p>Sunset: <span id="sunset">--</span></p>
+            </div>
+        </section>
+
+        <section class="weather-forecast-section">
+            <h2>Weather Forecast</h2>
+            <div id="forecast">
+                <p>Today: <strong><span id="forecast-day1">--</span>°C</strong></p>
+                <p>Wednesday: <strong><span id="forecast-day2">--</span>°C</strong></p>
+                <p>Thursday: <strong><span id="forecast-day3">--</span>°C</strong></p>
+            </div>
+        </section>
+
+        <section class="spotlights-section">
+            <h2>Business Spotlights</h2>
+            <div class="spotlight-container">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-info">
+                <h3>Harare Chamber of Commerce</h3>
+                <p>Harare Drive</p>
+                <p>Harare, Mali 999</p>
+                <p>info@hararecc.org</p>
+                <p>(263) 123-4567</p>
+            </div>
+            <div class="social-media">
+                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>WDD231 Class Project | Dylan Magumura</p>
+            <p>&copy; <span id="currentyear"></span> Harare Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
