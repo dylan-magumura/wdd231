@@ -428,3 +428,109 @@ footer {
         text-align: left;
     }
 }
+
+/* === List View Styling === */
+#members.list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden; 
+  
+}
+
+#members.list .member-card .level {
+  display: none;
+}
+
+
+/* Zebra striping */
+#members.list .member-card:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+#members.list .member-card:nth-child(even) {
+  background-color: #ffffff;
+}
+
+/* List card layout */
+#members.list .member-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+#members.list .member-card:last-child {
+  border-bottom: none; 
+}
+
+#members.list .member-card img {
+display: none;
+}
+
+#members.list .member-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+}
+
+#members.list .member-card p,
+#members.list .member-card a {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+#members.list .member-card a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+#members.list .member-card a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 800px) {
+  #members.list .member-card {
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: auto auto auto;
+    text-align: left;
+    gap: 0.5rem 1rem;
+  }
+
+  #members.list .member-card h3 {
+    grid-column: span 1;
+  }
+
+  #members.list .member-card p,
+  #members.list .member-card a {
+    grid-column: span 1;
+  }
+}
+
+.member-card img {
+    width: 120px;        
+    height: 120px;       
+    object-fit: contain; 
+    display: block;
+    margin: 0 auto 1rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 4px;
+}
+
+/* Smaller images in list view */
+#members.list .member-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin: 0;
+    border-radius: 4px;
+}
