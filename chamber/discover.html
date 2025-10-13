@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"></meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+  <title>Discover Harare</title>
+  <meta name="description" content="Explore Harare and learn about its culture, attractions, and people."></meta>
+  <meta name="author" content="Dylan Magumura"></meta>
+
+  <link rel="stylesheet" href="styles/normalize.css"></link>
+  <link rel="stylesheet" href="styles/base.css"></link>
+
+  <script defer src="scripts/discover.js"></script>
+  <script defer src="scripts/dates.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo-name">
+        <img src="images/logo.png" alt="Harare Chamber of Commerce Logo" class="chamber-logo"></img>
+        <h1>Harare Chamber of Commerce</h1>
+      </div>
+      <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+      <nav>
+        <ul class="nav-links" id="primary-navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html" class="active">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="home-grid">
+    <aside class="sidebar">
+      <div id="visit-message"></div>
+
+      <section class="demographics">
+        <h2>Harare Demographics</h2>
+        <p><strong>Population:</strong> 2.3 million</p>
+        <p><strong>Median Age:</strong> 20.5 years</p>
+        <p><strong>Primary Language:</strong> Shona, English</p>
+        <p><strong>Currency:</strong> Zimbabwean Dollar (ZWL)</p>
+      </section>
+
+      <section class="events">
+        <h2>Upcoming Events</h2>
+        <ul>
+          <li><strong>Oct 20:</strong> Harare International Food Festival</li>
+          <li><strong>Nov 5:</strong> ZimTrade Business Networking Expo</li>
+          <li><strong>Dec 1:</strong> National Arts Merit Awards</li>
+        </ul>
+      </section>
+
+      <section class="attractions">
+        <h2>Local Attractions</h2>
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/National_Gallery_of_Zimbabwe" target="_blank">National Gallery of Zimbabwe</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Mbare_Musika" target="_blank">Mbare Musika Market</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Kopje" target="_blank">The Harare Kopje</a></li>
+        </ul>
+      </section>
+    </aside>
+
+    <section class="main-content">
+      <h2>Explore Harare</h2>
+      <div class="gallery">
+        <div class="gallery-card">
+          <img src="images/harare.jpg" alt="Harare Skyline" loading="lazy"></img>
+          <div class="caption">Harare City Skyline</div>
+        </div>
+        <div class="gallery-card">
+          <img src="images/art-gallery.jpg" alt="National Gallery" loading="lazy"></img>
+          <div class="caption">National Gallery of Zimbabwe</div>
+        </div>
+        <div class="gallery-card">
+          <img src="images/national-heroes.jpg" alt="Mbare Musika Market" loading="lazy"></img>
+          <div class="caption">Mbare Musika Market</div>
+        </div>
+        <div class="gallery-card">
+          <img src="images/lionpark.jpg" alt="ZimParks Wildlife" loading="lazy"></img>
+          <div class="caption">Wildlife in ZimParks</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-info">
+        <h3>Harare Chamber of Commerce</h3>
+        <p>999 Harare Drive</p>
+        <p>Harare, Zimbabwe</p>
+        <p>info@hararecc.org</p>
+        <p>(263) 123-4567</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>WDD231 Class Project | Dylan Magumura</p>
+      <p>&copy; <span id="currentyear"></span> Harare Chamber of Commerce</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>
