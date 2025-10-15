@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <title>Project Site Plan</title>
+    <style>
+        :root {
+            --caribbean-current: hsla(182, 100%, 23%, 1);
+            --floral-white: hsla(47, 43%, 96%, 1);
+            --text-color: #333;
+        }
+
+        body {
+            font-family: "Source Sans Pro", monospace;
+            background-color: var(--floral-white);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Oswald", sans-serif;
+            color: var(--caribbean-current);
+            font-weight: 400;
+        }
+
+        p,
+        li,
+        a,
+        button {
+            font-family: "Source Sans Pro", monospace;
+            color: var(--text-color);
+            font-weight: 400;
+        }
+
+        button {
+            background-color: var(--caribbean-current);
+            color: var(--floral-white);
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: var(--floral-white);
+            color: var(--caribbean-current);
+            border: 1px solid var(--caribbean-current);
+        }
+
+        pre {
+            background-color: var(--floral-white);
+            padding: 10px;
+            border: 1px solid var(--caribbean-current);
+        }
+
+        img {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Individual Project Site Plan</h2>
+    </header>
+
+    <section>
+        <h3>Site Name:</h3>
+        <h4>ZimTrek Discovery</h4>
+        <ul>
+            <li>This name reflects the goal of the site: to help users explore, learn about, and appreciate the beauty,
+                culture, and adventure that Zimbabwe has to offer.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Site Purpose:</h3>
+        <h4>For Discovering the beauty of the flora and fauna and landscape of Zimbabwe</h4>
+        <ul>
+            <li>This website offers a comprehensive guide to Zimbabwe's attractions, culture, nature, and travel tips.
+                It will include information about national parks, heritage sites, local cuisine, best times to visit,
+                currency info, safety tips, and more.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Scenarios:</h3>
+        <ul>
+            <li>
+                <strong>What are the top natural attractions to visit in Zimbabwe?</strong>
+                <p>This question will guide content around major destinations like Victoria Falls, Hwange National Park,
+                    and the Great Zimbabwe ruins — with images, tips, and travel options.</p>
+            </li>
+            <li>
+                <strong>What should I know before traveling to Zimbabwe as a tourist?</strong>
+                <p>This scenario covers practical travel advice including visa requirements, weather, currency,
+                    transport, and cultural etiquette to help tourists prepare.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Color Schema:</h3>
+        <p>The color scheme represents natural beauty and clarity:</p>
+        <ul>
+            <li>
+                <strong>Caribbean Current (hsla(182, 100%, 23%, 1))</strong>: Used for headings and buttons, bringing a
+                deep, fresh tone inspired by nature.
+            </li>
+            <li>
+                <strong>Floral White (hsla(47, 43%, 96%, 1))</strong>: Used for the site background, giving it a light,
+                clean, and welcoming feel.
+            </li>
+        </ul>
+
+        <h3>Example CSS HSL:</h3>
+        <pre>
+  --black: hsla(0, 0%, 0%, 1);
+  --eerie-black: hsla(120, 7%, 11%, 1);
+  --caribbean-current: hsla(182, 100%, 23%, 1);
+  --light-sea-green: hsla(175, 87%, 40%, 1);
+  --hookers-green: hsla(173, 14%, 48%, 1);
+  --floral-white: hsla(47, 43%, 96%, 1);
+  --white: hsla(0, 0%, 100%, 1);
+    </pre>
+    </section>
+
+    <section>
+        <h3>Typography:</h3>
+
+        <h4>1. Primary Font: Oswald (sans-serif)</h4>
+        <ul>
+            <li><strong>Usage:</strong> Used for headings to give the site a bold and clear structure.</li>
+            <li><strong>Applied to:</strong> h1, h2, h3, etc.</li>
+        </ul>
+
+        <h4>2. Secondary Font: Source Sans Pro (monospace in fallback)</h4>
+        <ul>
+            <li><strong>Usage:</strong> Used for all paragraphs and interface text for clarity and readability.</li>
+            <li><strong>Applied to:</strong> Body text, buttons, links, and list items.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Wireframe:</h3>
+
+    </section>
+</body>
+
+</html>
